@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qY5R6VGVyn/Df4Bw6POn73OHnW3uGzsmwMnZ5ACqouYuvQA6vZmnHQsNC1q/ilpfU+x+UfqEjqYE9lVMM20/rA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emmaw\\RiderProjects\\PokeApp\\PokeApi\\PokeApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emmaw\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

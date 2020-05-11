@@ -1,0 +1,15 @@
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.exe
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.deps.json
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.runtimeconfig.json
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.runtimeconfig.dev.json
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.dll
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\PokeApi.pdb
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.csprojAssemblyReference.cache
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.csproj.CoreCompileInputs.cache
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.AssemblyInfoInputs.cache
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.AssemblyInfo.cs
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.csproj.CopyComplete
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.dll
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.pdb
+C:\Users\emmaw\RiderProjects\PokeApp\PokeApi\obj\Debug\netcoreapp3.1\PokeApi.genruntimeconfig.cache
