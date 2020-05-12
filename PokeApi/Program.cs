@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
 //Using System.Net.Http directive which will enable HttpClient.
 using System.Net.Http;
 //use newtonsoft to convert json to c# objects.
 using Newtonsoft.Json.Linq;
+using PokemonApi;
 
 namespace PokeApi
 {
@@ -10,7 +12,13 @@ namespace PokeApi
     {
         static void Main(string[] args)
         {
-            GetPokemon();
+            Console.WriteLine("Poke ID: ");
+            //GetPokemon();
+            //Console.ReadLine();
+            string id = Console.ReadLine();
+            //int id = Convert.ToInt16(Console.ReadLine());
+            GetOnePokemon(id);
+            Console.ReadKey();
         }
 
         public static async void GetPokemon()
@@ -51,5 +59,52 @@ namespace PokeApi
                 Console.WriteLine(exception);
             }
         }
+        
+        //Define your static method which will make the method become part of the class
+        //Have it void since your are logging the result into the console.
+        //Which would take a integer as a argument.
+        public static async void GetOnePokemon(string pokeId)
+        {
+            //Define your base url
+            string baseURL = $"http://pokeapi.co/api/v2/pokemon/{pokeId}";
+            //Have your api call in try/catch block.
+            try { 
+                //Now we will have our using directives which would have a HttpClient 
+                using (HttpClient client = new HttpClient())
+                {
+                    //Now get your response from the client from get request to baseurl.
+                    //Use the await keyword since the get request is asynchronous, and want it run before next asychronous operation.
+                    using (HttpResponseMessage res = await client.GetAsync(baseURL))
+                    {
+                        //Now retrieve content from the response, which would be HttpContent, retrieve from the response Content property.
+                        using (HttpContent content = res.Content)
+                        {
+                            //Retrieve the data from the content of the response, have the await keyword since it is asynchronous.
+                            string data = await content.ReadAsStringAsync();
+                            //If the data is not null, parse the data to a C# object, then create a new instance of PokeItem.
+                            if (data != null)
+                            {
+                                //Parse your data into a object.
+                                var result = JObject.Parse(data)["abilities"];
+                                Debug.WriteLine(result);
+
+                                PokeItem pokeItem = new PokeItem(name: $"{result[0]["ability"]["name"]}");
+
+                                Console.WriteLine("Pokemon Name: {0}", pokeItem.Name);
+                            }
+                            else
+                            {
+                                //If data is null log it into console.
+                                Console.WriteLine("Data is null!");
+                            }
+                        }
+                    }
+                }
+                //Catch any exceptions and log it into the console.
+            } catch(Exception exception) {
+                Console.WriteLine(exception);
+            }
+        }
+        
     }
 }
